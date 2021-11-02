@@ -33,7 +33,7 @@ class SignInActivity : AppCompatActivity() {
 
 
         val gso= GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("453259786215-1gbaelj0dlruaa207bl4m49ohgbro82o.apps.googleusercontent.com")
+            .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
 
@@ -109,6 +109,8 @@ class SignInActivity : AppCompatActivity() {
         {
             signInButton.visibility= View.VISIBLE
             progressBar.visibility=View.GONE
+
+
 
 
 
